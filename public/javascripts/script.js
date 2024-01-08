@@ -134,6 +134,13 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+form.addEventListener("submit", logSubmit);
+
+function logSubmit(event) {
+  event.preventDefault();
+  toastr.success('Your Data Send Successfully',$('#fullname').val())
+}
+
 
 
 // page navigation variables
@@ -158,6 +165,5 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-function popupbtn(){
-  alert('Data Send Successfully')
-}
+
+

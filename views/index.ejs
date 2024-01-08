@@ -24,6 +24,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Toastr -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"> -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -132,8 +136,8 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="https://www.linkedin.com/in/bhautik-morja-09b293170?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"  target="_blank"
-              class="social-link">
+            <a href="https://www.linkedin.com/in/bhautik-morja-09b293170?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank" class="social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
@@ -145,7 +149,7 @@
           </li>
 
           <li class="social-item">
-            <a href="https://stackoverflow.com/users/22459872/bhautik-morja" class="social-link"  target="_blank">
+            <a href="https://stackoverflow.com/users/22459872/bhautik-morja" class="social-link" target="_blank">
               <ion-icon name="logo-stackoverflow"></ion-icon>
             </a>
           </li>
@@ -1087,7 +1091,7 @@
           <form action="#" method="post" class="form" data-form>
 
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="text" id="fullname" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
 
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
@@ -1095,7 +1099,7 @@
             <textarea type="text" name="message" class="form-input" placeholder="Your Message" required
               data-form-input></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn onclick="popupbtn()">
+            <button class="form-btn" type="submit" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
@@ -1105,15 +1109,20 @@
       </article>
     </div>
   </main>
+
+  <!--
+    - ionicon link
+  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+
   <!--
     - custom js link
   -->
   <script src="javascripts/script.js"></script>
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
