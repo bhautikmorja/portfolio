@@ -157,3 +157,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+function popupbtn(){
+  alert('Data Send Successfully')
+}
