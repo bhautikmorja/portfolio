@@ -139,7 +139,10 @@ form.addEventListener("submit", logSubmit);
 function logSubmit(event) {
   event.preventDefault();
   toastr.success('Your Data Send Successfully',$('#fullname').val())
+
+  form.reset()
 }
+
 
 
 
