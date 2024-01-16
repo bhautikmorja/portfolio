@@ -134,13 +134,49 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+// form.addEventListener("submit", logSubmit);
+
+// function logSubmit(event) {
+//   event.preventDefault();
+//   toastr.success('Your Data Send Successfully',$('#fullname').val())
+
+//   form.reset()
+// }
+
 form.addEventListener("submit", logSubmit);
 
 function logSubmit(event) {
   event.preventDefault();
-  toastr.success('Your Data Send Successfully',$('#fullname').val())
 
-  form.reset()
+  // Gather form data
+  const formData = {
+    fullname: document.getElementById('fullname').value,
+    email: document.querySelector('[name="email"]').value,
+    message: document.querySelector('[name="message"]').value
+  };
+
+  // Make a POST request to your server
+  fetch('/', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(formData)
+  })
+  .then(response => response.json())
+  .then(data => {
+    // Handle the response data
+    console.log(data);
+    toastr.success('Your Data Sent Successfully', formData.fullname);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    toastr.error('Error sending data');
+  })
+  .finally(() => {
+    // Reset the form
+    form.reset();
+  });
 }
 
 

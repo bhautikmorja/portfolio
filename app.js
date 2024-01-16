@@ -11,11 +11,12 @@ var app = express();
 
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://dhrumpatel:mydata@cluster0.t5aerej.mongodb.net/resume?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://dhrumpatel:root@cluster0.t5aerej.mongodb.net/portfolio?retryWrites=true&w=majority')
   .then(() => console.log('Connected!'))
   .catch((error)=> {
     console.log(error.message)
   })
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
