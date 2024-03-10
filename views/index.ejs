@@ -1,105 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhautik Morja - Personal Portfolio</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bhautik Morja - Personal Portfolio</title>
-
-  <!--
+    <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="/images/my-avatar.png" type="image/x-icon">
-  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link
+      rel="shortcut icon"
+      href="/images/my-avatar.png"
+      type="image/x-icon"
+    />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
-  <!--
+    <!--
     - custom css link
   -->
-  <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
 
-  <!--
+    <!--
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Toastr -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"> -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
-</head>
-
-<body>
-
-  <!--
+    <!-- Toastr -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"> -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--
     - #MAIN
   -->
 
-  <main>
-
-    <!--
+    <main>
+      <!--
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure>
+            <img src="/images/my-avatar.png" alt="Bhautik Morja" width="80" />
+          </figure>
 
-      <div class="sidebar-info">
+          <div class="info-content">
+            <h1 class="name" title="Bhautik Morja">Bhautik Morja</h1>
 
-        <figure>
-          <img src="/images/my-avatar.png" alt="Bhautik Morja" width="80">
-        </figure>
+            <p class="title">Node.js developer</p>
+          </div>
 
-        <div class="info-content">
-          <h1 class="name" title="Bhautik Morja">Bhautik Morja</h1>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
 
-          <p class="title">Node.js || NestJs developer</p>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-      </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
 
-      <div class="sidebar-info_more">
+                <a href="mailto:bhautikmorja@gmail.com" class="contact-link"
+                  >bhautikmorja@gmail.com</a
+                >
+              </div>
+            </li>
 
-        <div class="separator"></div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
 
-        <ul class="contacts-list">
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
 
-          <li class="contact-item">
+                <a href="tel:+919727477596" class="contact-link"
+                  >+91 97274 77596</a
+                >
+              </div>
+            </li>
 
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:bhautikmorja@gmail.com" class="contact-link">bhautikmorja@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+919727477596" class="contact-link">+91 97274 77596</a>
-            </div>
-
-          </li>
-
-
-          <!--       
+            <!--       
                               uncomment to show birthdate
                                 <li class="contact-item">
 
@@ -115,136 +115,124 @@
 
                          </li> -->
 
-          <li class="contact-item">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
 
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
+                <address>Gujarat, India</address>
+              </div>
+            </li>
+          </ul>
 
-              <address>Gujarat, India</address>
-            </div>
+          <div class="separator"></div>
 
-          </li>
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/bhautik-morja-09b293170?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
 
-        </ul>
+            <li class="social-item">
+              <a
+                href="https://www.upwork.com/freelancers/~01ae55eb1bbcbe8059"
+                class="social-link"
+                target="_blank"
+              >
+                <iconify-icon icon="simple-icons:upwork"></iconify-icon>
+              </a>
+            </li>
 
-        <div class="separator"></div>
+            <li class="social-item">
+              <a
+                href="https://stackoverflow.com/users/22459872/bhautik-morja"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-stackoverflow"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
 
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/bhautik-morja-09b293170?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-              target="_blank" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.upwork.com/freelancers/~01ae55eb1bbcbe8059" class="social-link" target="_blank">
-              <iconify-icon icon="simple-icons:upwork"></iconify-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://stackoverflow.com/users/22459872/bhautik-morja" class="social-link" target="_blank">
-              <ion-icon name="logo-stackoverflow"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
+      <!--
       - #main-content
     -->
 
-    <div class="main-content">
-
-      <!--
+      <div class="main-content">
+        <!--
         - #NAVBAR
       -->
 
-      <nav class="navbar">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
 
-        <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Experience</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Experience</button>
-          </li>
-
-          <!-- <li class="navbar-item">
+            <!-- <li class="navbar-item">
                               <button class="navbar-link" data-nav-link>Portfolio</button>
                          </li> -->
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Services</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Services</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
 
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
+        <!--
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
+          <section class="about-text">
+            <p>
+              Hi there, I'm Bhautik Morja, a driven Node.js & NestJs developer
+              with more than one years of hands-on expertise creating APIs.
+            </p>
 
-        <section class="about-text">
-          <p>
-            Hi there, I'm Bhautik Morja, a driven Node.js & NestJs developer with more than one years
-            of hands-on
-            expertise creating APIs.
-          </p>
+            <p>
+              My experience with Node.js & NestJs has been formed by my constant
+              commitment to producing high-caliber, user-friendly APIs. My area
+              of expertise consists of combining cutting-edge technology with a
+              strong design understanding to create visually stunning and
+              functional APIs.With a proven track record of delivering
+              high-quality code and intuitive user interfaces, I'm adept at
+              integrating complex functionalities while maintaining code
+              efficiency.
+            </p>
+          </section>
 
-          <p>
-            My experience with Node.js & NestJs has been formed by my constant commitment to producing
-            high-caliber, user-friendly APIs. My area of expertise consists of combining
-            cutting-edge technology with a strong design understanding to create visually stunning and
-            functional APIs.With a proven track record of delivering high-quality code and
-            intuitive user interfaces, I'm adept at integrating complex functionalities while
-            maintaining code efficiency.
-          </p>
-        </section>
-
-
-        <!--
+          <!--
           - service
         -->
 
-        <section class="service">
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
 
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <!--  <li class="service-item">
+            <ul class="service-list">
+              <!--  <li class="service-item">
 
                                    <div class="service-icon-box">
                                         <img src="/images/icon-design.svg
@@ -260,7 +248,7 @@
                                    </div>
 
                               </li> -->
-            <!-- 
+              <!-- 
                               <li class="service-item">
 
                                    <div class="service-icon-box">
@@ -277,60 +265,61 @@
 
                               </li> -->
 
-            <li class="service-item">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="/images/database.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
 
-              <div class="service-icon-box">
-                <img src="/images/database.svg" alt="mobile app icon" width="40">
-              </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Back-end Web Development
+                  </h4>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Back-end Web Development</h4>
-
-                <p class="service-item-text">
-                  Professional development of APIs and Database Management.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </section>
-        <section class="askill">
-
-          <h3 class="h3 service-title">Skills</h3>
-          <ol class="askill-list">
-            <li class="askill-item">Node.js</li>
-            <li class="askill-item">ReactJS</li>
-            <li class="askill-item">NestJs</li>
-            <li class="askill-item">Express.js</li>
-            <li class="askill-item">API Development</li>
-            <li class="askill-item">Javascript</li>
-            <!-- <ol class="subpoint-list">
+                  <p class="service-item-text">
+                    Professional development of APIs and Database Management.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="askill">
+            <h3 class="h3 service-title">Skills</h3>
+            <ol class="askill-list">
+              <li class="askill-item">Node.js</li>
+              <li class="askill-item">ReactJS</li>
+              <li class="askill-item">Express.js</li>
+              <li class="askill-item">API Development</li>
+              <li class="askill-item">Javascript</li>
+              <!-- <ol class="subpoint-list">
                                    <li class="subpoint-item">Provider</li>
                                    <li class="subpoint-item">Bloc</li>
                                    <li class="subpoint-item">Get X</li>
                               </ol> -->
-            <li class="askill-item">MongoDB</li>
-            <li class="askill-item">mysql</li>
-            <!-- <ol class="subpoint-list">
+              <li class="askill-item">MongoDB</li>
+              <li class="askill-item">mysql</li>
+              <!-- <ol class="subpoint-list">
 
                                    <li class="subpoint-item">FCM (Direbase Cloud Messaging)</li>
                                    <li class="subpoint-item">One Signal</li>
                               </ol> -->
-            <li class="askill-item">Third Party Payment Integration</li>
-            <li class="askill-item">Database Management</li>
-            <!-- <ol class="subpoint-list">
+              <li class="askill-item">Third Party Payment Integration</li>
+              <li class="askill-item">Database Management</li>
+              <!-- <ol class="subpoint-list">
                                    <li class="subpoint-item">Hive</li>
                                    <li class="subpoint-item">Sqflite</li>
                                    <li class="subpoint-item">Firestore</li>
                               </ol> -->
-          </ol>
-
-
-        </section>
-        <!--
+            </ol>
+          </section>
+          <!--
           - testimonials
         -->
 
-        <!-- <section class="testimonials">
+          <!-- <section class="testimonials">
 
                          <h3 class="h3 testimonials-title">Testimonials</h3>
 
@@ -446,60 +435,55 @@
 
                     </section> -->
 
-
-        <!--
+          <!--
           - testimonials modal
         -->
 
-        <div class="modal-container" data-modal-container>
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
 
-          <div class="overlay" data-overlay></div>
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
 
-          <section class="testimonials-modal">
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
 
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with
-                  the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit
-                  amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels
-                  alia.
-                </p>
+                <img src="/images/icon-quote.svg" alt="quote icon" />
               </div>
 
-            </div>
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
 
-          </section>
+                <time datetime="2021-06-14">14 June, 2021</time>
 
-        </div>
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
 
-
-        <!--
+          <!--
           - clients
         -->
 
-        <!-- <section class="clients">
+          <!-- <section class="clients">
 
                          <h3 class="h3 clients-title">Clients</h3>
 
@@ -544,86 +528,70 @@
                          </ul>
 
                     </section> -->
+        </article>
 
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #RESUME
       -->
 
-      <article class="experience" data-page="experience">
+        <article class="experience" data-page="experience">
+          <header>
+            <h2 class="h2 article-title">Experience</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Experience</h2>
-        </header>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3"></h3>
             </div>
 
-            <h3 class="h3"></h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h3 class="h3 timeline-item-title">
+                  Nodejs & NestJs Developer at Inno Genesis
+                </h3>
 
-          <ol class="timeline-list">
+                <span>Dec 2023 — Present</span>
 
-            <li class="timeline-item">
+                <p class="timeline-text">
+                  <b style="color: white">Skills: </b> Third Party Payment
+                  Integration · Cross-platform Development · Firebase · REST
+                  APIs · Google API · MongoDB · mysql · Express.js · Data
+                  Management
+                </p>
+              </li>
 
-              <h3 class="h3 timeline-item-title">Nodejs & NestJs Developer at Inno Genesis</h3>
+              <li class="timeline-item">
+                <h3 class="h3 timeline-item-title">Freelancer Developer</h3>
 
-              <span>Dec 2023 — Present</span>
+                <span>Apr 2022 — Sep 2023</span>
 
+                <p class="timeline-text">
+                  <b style="color: white">Skills: </b> Third Party Payment
+                  Integration · Cross-platform Development · Firebase · REST
+                  APIs · Google API · MongoDB · mysql · Express.js · Data
+                  Management
+                </p>
+              </li>
 
-              <p class="timeline-text">
-                <b style="color: white;">Skills: </b> Third Party Payment Integration ·
-                Cross-platform
-                Development · Firebase · REST APIs · Google API · MongoDB · mysql · Express.js ·
-                Data Management
-              </p>
+              <li class="timeline-item">
+                <h3 class="h3 timeline-item-title">
+                  Node.js devloper at Creative Design & Multimedia Institute
+                </h3>
 
-            </li>
+                <span>March 2023 - Sep 2023</span>
 
-            <li class="timeline-item">
-
-              <h3 class="h3 timeline-item-title">Freelancer Developer</h3>
-
-              <span>Apr 2022 — Sep 2023</span>
-
-
-              <p class="timeline-text">
-                <b style="color: white;">Skills: </b> Third Party Payment Integration ·
-                Cross-platform
-                Development · Firebase · REST APIs · Google API · MongoDB · mysql · Express.js ·
-                Data Management
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h3 class="h3 timeline-item-title">Node.js devloper at Creative Design & Multimedia
-                Institute</h3>
-
-              <span>March 2023 - Sep 2023</span>
-
-
-              <p class="timeline-text">
-                <b style="color: white;">Skills: </b> Object-oriented Languages · API
-                Development · Database Management · MongoDB · Express.js
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-        <!-- <section class="timeline">
+                <p class="timeline-text">
+                  <b style="color: white">Skills: </b> Object-oriented Languages
+                  · API Development · Database Management · MongoDB · Express.js
+                </p>
+              </li>
+            </ol>
+          </section>
+          <!-- <section class="timeline">
 
                          <div class="title-wrapper">
                               <div class="icon-box">
@@ -682,440 +650,467 @@
                          </ol>
 
                     </section> -->
+        </article>
 
-
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
+          <section class="projects">
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
 
-        <section class="projects">
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
 
-          <div class="filter-select-box">
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
 
-            <button class="filter-select" data-select>
+                <li class="select-item">
+                  <button data-select-item>Web design</button>
+                </li>
 
-              <div class="select-value" data-selecct-value>Select category</div>
+                <li class="select-item">
+                  <button data-select-item>Applications</button>
+                </li>
 
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
+            </div>
 
-            </button>
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="portfolio/workoholik.html" target="”_blank”">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-            <ul class="select-list">
+                    <img
+                      src="/images/project-1.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
 
-              <li class="select-item">
-                <button data-select-item>All</button>
+                  <h3 class="project-title">Workoholik</h3>
+
+                  <p class="project-category">On-demand service app.</p>
+                </a>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Web design</button>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="portfolio/sahaj.html" target="”_blank”">
+                  <figure class="project-img">
+                    <div class="portfolio-links"></div>
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="/img/portfolio/sahaj/3.png"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Sahaj</h3>
+
+                  <p class="project-category">Stock management app</p>
+                </a>
+                <a
+                  href="portfolios/2-cars-3d.html"
+                  data-gallery="portfolioDetailsGallery"
+                  data-glightbox="type: external"
+                  class="portfolio-details-lightbox"
+                  title="Portfolio Details"
+                  ><i class="bx bx-file"></i
+                ></a>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Applications</button>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="portfolio/ask-buddy.html" target="”_blank”">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="/img/portfolio/Ask buddy/1.png"
+                      alt="askbuddy"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Ask Buddy</h3>
+
+                  <p class="project-category">AI Chatbot</p>
+                </a>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Web development</button>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="portfolio/invoice-maker.html" target="”_blank”">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="/img/portfolio/invoicemaker/2.jpeg"
+                      alt="invoice-maker"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Invoice Maker</h3>
+
+                  <p class="project-category">Estimate Maker</p>
+                </a>
               </li>
 
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="portfolio/nc-pictures.html" target="”_blank”">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="/img/portfolio/NC Pictures/3.png"
+                      alt="nc-pictures"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">NC Pictures</h3>
+
+                  <p class="project-category">
+                    Photoshoot appointment booking app
+                  </p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="portfolio/medic-meditation.html" target="”_blank”">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="/img/portfolio/medic-meditation/1.jpeg"
+                      alt="medic-meditation"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Medic meditation</h3>
+
+                  <p class="project-category">Meditation timer</p>
+                </a>
+              </li>
             </ul>
+          </section>
+        </article>
 
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="portfolio/workoholik.html" target=”_blank”>
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="/images/project-1.png" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Workoholik</h3>
-
-                <p class="project-category">On-demand service app.</p>
-
-              </a>
-            </li>
-
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="portfolio/sahaj.html" target=”_blank”>
-
-                <figure class="project-img">
-                  <div class="portfolio-links">
-
-
-                  </div>
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="/img/portfolio/sahaj/3.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Sahaj</h3>
-
-                <p class="project-category">Stock management app</p>
-
-              </a>
-              <a href="portfolios/2-cars-3d.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
-                class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-file"></i></a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="portfolio/ask-buddy.html" target=”_blank”>
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="/img/portfolio/Ask buddy/1.png" alt="askbuddy" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Ask Buddy</h3>
-
-                <p class="project-category">AI Chatbot</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="portfolio/invoice-maker.html" target=”_blank”>
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="/img/portfolio/invoicemaker/2.jpeg" alt="invoice-maker" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Invoice Maker</h3>
-
-                <p class="project-category">Estimate Maker</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="portfolio/nc-pictures.html" target=”_blank”>
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="/img/portfolio/NC Pictures/3.png" alt="nc-pictures" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">NC Pictures</h3>
-
-                <p class="project-category">Photoshoot appointment booking app</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="portfolio/medic-meditation.html" target=”_blank”>
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="/img/portfolio/medic-meditation/1.jpeg" alt="medic-meditation" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Medic meditation</h3>
-
-                <p class="project-category">Meditation timer</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #BLOG
       -->
 
-      <article class="services" data-page="services">
+        <article class="services" data-page="services">
+          <header>
+            <h2 class="h2 article-title">Services</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Services</h2>
-        </header>
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a href="#" onclick="return false;">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="/images/my.jpg"
+                      alt="Best fonts every designer"
+                      loading="lazy"
+                    />
+                  </figure>
 
-        <section class="blog-posts">
+                  <div class="blog-content">
+                    <div class="blog-meta"></div>
 
-          <ul class="blog-posts-list">
-            <li class="blog-post-item">
-              <a href="#" onclick="return false;">
+                    <h3 class="h3 blog-item-title">Full Web Development</h3>
 
-                <figure class="blog-banner-box">
-                  <img src="/images/my.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
+                    <p class="blog-text">
+                      Full web creation from scratch to the deployment with ads
+                      integration & manymore.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">Full Web Development</h3>
+              <li class="blog-post-item">
+                <a href="#" onclick="return false;">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="/images/blog-2.jpg"
+                      alt="Best fonts every designer"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Full web creation from scratch to the deployment
-                    with ads integration & manymore.
-                  </p>
+                  <div class="blog-content">
+                    <div class="blog-meta"></div>
 
-                </div>
+                    <h3 class="h3 blog-item-title">Bug Fixing</h3>
 
-              </a>
-            </li>
-
-
-
-            <li class="blog-post-item">
-              <a href="#" onclick="return false;">
-
-                <figure class="blog-banner-box">
-                  <img src="/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
+                    <p class="blog-text">
+                      Bug, error and crash fixing in web,web crashing and many
+                      more.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">Bug Fixing</h3>
+              <li class="blog-post-item">
+                <a href="#" onclick="return false;">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="/images/blog-3.jpg"
+                      alt="Design digest #80"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Bug, error and crash fixing in web,web crashing and many more.
-                  </p>
+                  <div class="blog-content">
+                    <div class="blog-meta"></div>
 
-                </div>
+                    <h3 class="h3 blog-item-title">Add New Features</h3>
 
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#" onclick="return false;">
-
-                <figure class="blog-banner-box">
-                  <img src="/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
+                    <p class="blog-text">
+                      Add or design new features like new module, UI changes,
+                      etc.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">Add New Features</h3>
+              <li class="blog-post-item">
+                <a href="#" onclick="return false;">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="/images/blog-4.jpg"
+                      alt="UI interactions of the week"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">Add or design new features like new module, UI
-                    changes, etc.
-                  </p>
+                  <div class="blog-content">
+                    <div class="blog-meta"></div>
 
-                </div>
+                    <h3 class="h3 blog-item-title">Reskinning</h3>
 
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#" onclick="return false;">
-
-                <figure class="blog-banner-box">
-                  <img src="/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
+                    <p class="blog-text">
+                      Change user interface, logos, designs, particles, sound
+                      effects and user experience.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">Reskinning</h3>
+              <li class="blog-post-item">
+                <a href="#" onclick="return false;">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="/images/my1.png"
+                      alt="The forgotten art of spacing"
+                      loading="lazy"
+                      width="100%"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Change user interface, logos, designs, particles, sound effects and
-                    user experience.
-                  </p>
+                  <div class="blog-content">
+                    <div class="blog-meta"></div>
 
-                </div>
+                    <h3 class="h3 blog-item-title">Payment Gateway</h3>
 
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#" onclick="return false;">
-
-                <figure class="blog-banner-box">
-                  <img src="/images/my1.png" alt="The forgotten art of spacing" loading="lazy" width="100%">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
+                    <p class="blog-text">
+                      Implement a secure payment gateway to facilitate seamless
+                      transactions on your web platform.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">Payment Gateway</h3>
+              <li class="blog-post-item">
+                <a href="#" onclick="return false;">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="/images/blog-6.jpg"
+                      alt="Design digest #79"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
+                  <div class="blog-content">
+                    <div class="blog-meta"></div>
 
-                    Implement a secure payment gateway to facilitate seamless transactions
-                    on your web platform.
-                  </p>
+                    <h3 class="h3 blog-item-title">Deployment</h3>
 
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#" onclick="return false;">
-
-                <figure class="blog-banner-box">
-                  <img src="/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
+                    <p class="blog-text">
+                      Deploy your website to the web server for global
+                      accessibility and reach.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">Deployment</h3>
+              <li class="blog-post-item">
+                <a href="#" onclick="return false;">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="/images/my2.jpg"
+                      alt="Design digest #79"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Deploy your website to the web server for global accessibility and
-                    reach.
+                  <div class="blog-content">
+                    <div class="blog-meta"></div>
 
-                  </p>
+                    <h3 class="h3 blog-item-title">API Integration</h3>
 
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#" onclick="return false;">
-
-                <figure class="blog-banner-box">
-                  <img src="/images/my2.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
+                    <p class="blog-text">
+                      Integrate third-party plugins or SDKs, like Firebase,
+                      OneSignal, Google Sign-In, Apple Sign-In, and others, into
+                      your website for enhanced functionality and user
+                      experience.
+                    </p>
                   </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-                  <h3 class="h3 blog-item-title">API Integration</h3>
-
-                  <p class="blog-text">
-                    Integrate third-party plugins or SDKs, like Firebase, OneSignal, Google Sign-In,
-                    Apple Sign-In, and others, into your website for enhanced functionality and user
-                    experience.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <!-- <iframe
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <!-- <iframe
                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
                                    width="400" height="300" loading="lazy"></iframe> -->
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29752.372764681306!2d72.8096356123666!3d21.230000803547757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04eeb5c1077c1%3A0xf3db03f8cc74c359!2sKatargam%2C%20Surat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1702894681783!5m2!1sen!2sin"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-        <section class="contact-form">
-          <h3 class="h3 form-title">Contact Form</h3>
-          <form action="/" id="form" method="post" class="form" data-form>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29752.372764681306!2d72.8096356123666!3d21.230000803547757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04eeb5c1077c1%3A0xf3db03f8cc74c359!2sKatargam%2C%20Surat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1702894681783!5m2!1sen!2sin"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+            <form action="/" id="form" method="post" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  id="fullname"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
 
-            <div class="input-wrapper">
-              <input type="text" id="fullname" name="fullname" class="form-input" placeholder="Full name" required
-                data-form-input>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
+              <textarea
+                type="text"
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
 
-            <textarea type="text" name="message" class="form-input" placeholder="Your Message" required
-              data-form-input></textarea>
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-        </section>
-      </article>
-    </div>
-  </main>
-
-  <!--
+    <!--
     - ionicon link
   -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
-
-  <!--
+    <!--
     - custom js link
   -->
-  <script src="javascripts/script.js"></script>
-</body>
-
+    <script src="javascripts/script.js"></script>
+  </body>
 </html>

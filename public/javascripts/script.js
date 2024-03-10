@@ -134,15 +134,6 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
-// form.addEventListener("submit", logSubmit);
-
-// function logSubmit(event) {
-//   event.preventDefault();
-//   toastr.success('Your Data Send Successfully',$('#fullname').val())
-
-//   form.reset()
-// }
-
 form.addEventListener("submit", logSubmit);
 
 function logSubmit(event) {
@@ -166,7 +157,6 @@ function logSubmit(event) {
   .then(response => response.json())
   .then(data => {
     // Handle the response data
-    console.log(data);
     toastr.success('Your Data Sent Successfully', formData.fullname);
   })
   .catch(error => {
